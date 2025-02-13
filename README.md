@@ -1,2 +1,2 @@
 # intellugent-control-week1
-Praktikum Komtrol Cerdas Minggu 1
+Praktikum Kontrol Cerdas Minggu 1
