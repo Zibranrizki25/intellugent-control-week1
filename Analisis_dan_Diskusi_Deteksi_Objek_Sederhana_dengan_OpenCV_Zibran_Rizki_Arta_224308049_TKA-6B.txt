@@ -1,0 +1,35 @@
+Nama : Zibran Rizi Arta
+NIM   : 224308049
+Kelas  : TKA – 6B
+
+Analisis dan Diskusi Deteksi Objek Sederhana dengan OpenCV
+
+* Analisis Hasil :
+1. Apa yang terjadi saat objek berwarna merah muncul di kamera?
+Jawab : 
+	Saat program dijalankan maka akan menampilkan 3 jendela hasil (frame, mask, dan result). Jika pada frame terdeteksi warna merah maka pada jendela result akan muncul atau menampilkan warna merah, sementara untuk jendela mask akan muncul atau menampilkan warna hitam-putih. Jika tidak ada objek merah, jendela "Result" akan tampak gelap atau tidak menunjukkan objek apa pun kecuali warna merah
+2. Bagaimana system mendeteksi dan memfilter warna merah?
+Jawab :
+	Sistem ini dirancang untuk mendeteksi da menyaring warna merah dengan memanfaatkan OpenCV dan teknik pemrosesan citra dalam ruang warna HSV (Hue, Saturation, value).  Prosesnya dimulai dengan kamera yang menagkap gambar dalam format BGR, yang kemudian dikonversi ke format HSV untuk memudahkan pemisahan warna, hasil deteksi ditampilkan dalam beberapa jendela, termasuk gambar asli, hasil masking, dan resault. Apabila objek warna merah terdeteksi oleh kamera, maka sistem akan menandai dengan jelas, sebaliknya apabila tidak ada objek warna merah yang terdeteksi, maka pada jendela result akan tampak gelap dan tidak menanmpikan objek warna tertentu.
+3. Bagaimana metode ini dapat diterapkan dalam intelligent control systems?
+Jawab :
+	Dalam intelegent control system metode ini dapat diterapkan di berbagai bidang, seperti robotika. Robotika mengacu pada sistem kedali yang menggunakan kecerdasan buatan untuk memungkinkan mengambil keputusan. Dengan menggabungkan AI, sensor, dan pemrosesan data. Daka robot akan menjadi lebih cerdas dan mampu menangani tugas-tugas yang kompleks yang sebelumnya hanya bisa dilakukan oleh manusia, contoh penerapannya pada kendaraan misalnya bus dan kereta otonom.
+* Diskusi :
+1. Bagaimana AI dapat meningkatkan system control berbasis Computer Vision?
+Jawab :
+	Kecerdasan buatan (AI) memperkuat sistem kontrol berbasis Computer Vision dengan menjadikannya lebih adaptif, presisi tinggi, dan cerdas dalam berbagai aspek, termasuk pengenalan objek secara real-time, pengambilan keputusan berbasis data secara otomatis, pelacakan objek dengan akurasi yang lebih baik. Dengan memanfaatkan teknologi deep learning yang terus berkembang, integrasi dengan Internet of Things (IoT), serta berbagai pendekatan kecerdasan buatan lainnya, sistem kontrol tidak hanya mampu beroperasi dengan efisiensi yang lebih optimal, tetapi juga menjadi lebih responsif terhadap perubahan lingkungan dan mandiri dalam pengambilan keputusan. 
+2. Apa kelebihan dan kekurangan metode deteksi objek berbasis warna?
+Jawab :
+a) Kelebihan :
+> Sederhana dan Cepat, Metode ini mudah diterapkan, karena hanya memerlukan konversi ruang warna dari BGR ke HSV
+> Efisien dalam Lingkungan Terkontrol, Jika kondisi pencahayaan dan warna objek stabil, metode ini dapat bekerja dengan akurat untuk mendeteksi objek warna.
+> Tidak Membutuhkan Dataset Besar, deteksi berbasis warna membutuhkan definisi rentang warna yang sesuai, tanpa membutuhkan banyak data dat.
+b) Kekurangan :
+> Sensitif terhadap Perubahan Pencahayaan, Pencahayaan yang tidak stabil dapat mengubah tampilan warna, sehingga menyebabkan kesalahan deteksi warna saat program berjalan.
+> Tidak Dapat Membedakan Objek dengan Warna Serupa, sistem kesulitan membedakan mana objek yang hampir mirip dengan satu sama lain yang memilik warna hampir sama
+
+1. 
+3. Bagaimana cara meningkatkan akurasi sistem deteksi objek?
+Jawab :
+	Akurasi deteksi objek dapat ditingkatkan dengan menoptimalkan kualitas data, memilih alogoritma yang sesuai, dan menigkatkan efisiensi pemprosesan. Untuk deteksi yang lebih akurat, metode berbasis fitur seperti deep learning seperti YOLO, dapat diterapkan terutama dilingkungan yang kompleks. Augmentasi data membantu model mengenali objek dalam berbagai kondisi , sementara analisisi multi-frame dan pelacakan objek meningkatkan keakuratan dalam video. 
+
